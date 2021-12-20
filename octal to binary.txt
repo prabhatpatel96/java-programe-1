@@ -1,0 +1,20 @@
+package Remaining;
+
+import java.util.Scanner;
+
+public class OctalToBinary2 {
+	private static Scanner sc;
+	
+	public static void main(String[] args) {
+		
+		sc= new Scanner(System.in);
+
+		System.out.print("Please Enter Octal Number =  ");
+		String octalString = sc.nextLine();
+	
+		int decimalVal = Integer.parseInt(octalString, 8);
+		String binaryVal = Integer.toBinaryString(decimalVal);
+		
+		System.out.println("Octal To Binary Result = " + binaryVal);
+	}
+}
