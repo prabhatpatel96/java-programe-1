@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Largest
+{
+  public static void main(String args[])
+  {
+    int x, y, z;
+    System.out.println("Enter three integers");
+   
+
+    x = 45;
+    y = 8;
+    z =78;
+
+    if (x < y && x < z)
+      System.out.println("x  is the smallest.");
+    else if (y < x && y < z)
+      System.out.println("y is the smallest.");
+    else if (z < x && z < y)
+      System.out.println("z is the smallest.");
+    else
+      System.out.println("The numbers are not distinct.");
+  }
+}
